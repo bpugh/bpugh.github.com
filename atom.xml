@@ -1,101 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>My Dev Blog</title>
-  <meta name="author" content="Brandon Pugh">
-
-  
-  <meta name="description" content="One of the most used features of jQuery is the easy methods it provides to to attach event handlers to dom elements like this simple example: 1
-2
-3 &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://bpugh.github.com/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="http://feeds.feedburner.com/BrandonPughsDevJournal" rel="alternate" title="My Dev Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">My Dev Blog</a></h1>
-  
-    <h2>Just another development site.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/BrandonPughsDevJournal" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:bpugh.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[My Dev Blog]]></title>
+  <link href="http://bpugh.github.com/atom.xml" rel="self"/>
+  <link href="http://bpugh.github.com/"/>
+  <updated>2013-01-24T17:39:00-06:00</updated>
+  <id>http://bpugh.github.com/</id>
+  <author>
+    <name><![CDATA[Brandon Pugh]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2012/01/15/how-to-use-jquery-on-instead-of-live/">How to Use jQuery .on() Instead of .live()</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-01-15T15:52:25-06:00" pubdate data-updated="true">Jan 15<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of the most used features of jQuery is the easy methods it provides to to attach event handlers to dom elements like this simple example:</p>
+  <entry>
+    <title type="html"><![CDATA[How to use jQuery .on() instead of .live()]]></title>
+    <link href="http://bpugh.github.com/blog/2012/01/15/how-to-use-jquery-on-instead-of-live/"/>
+    <updated>2012-01-15T15:52:25-06:00</updated>
+    <id>http://bpugh.github.com/blog/2012/01/15/how-to-use-jquery-on-instead-of-live</id>
+    <content type="html"><![CDATA[<p>One of the most used features of jQuery is the easy methods it provides to to attach event handlers to dom elements like this simple example:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -175,42 +98,15 @@
 </span><span class='line'><span class="p">});</span>
 </span></code></pre></td></tr></table></div></figure>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/09/my-thoughts-on-the-global-day-of-coderetreat/">My Thoughts on the Global Day of Coderetreat</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-09T17:04:00-06:00" pubdate data-updated="true">Dec 9<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Last weekend I attended the Global Day of Coderetreat in Dallas, TX which was not only my first Coderetreat but also my first time attending a developer community event and I have to say that it was a great and worthwhile experience.</p>
+  <entry>
+    <title type="html"><![CDATA[My thoughts on the Global Day of Coderetreat]]></title>
+    <link href="http://bpugh.github.com/blog/2011/12/09/my-thoughts-on-the-global-day-of-coderetreat/"/>
+    <updated>2011-12-09T17:04:00-06:00</updated>
+    <id>http://bpugh.github.com/blog/2011/12/09/my-thoughts-on-the-global-day-of-coderetreat</id>
+    <content type="html"><![CDATA[<p>Last weekend I attended the Global Day of Coderetreat in Dallas, TX which was not only my first Coderetreat but also my first time attending a developer community event and I have to say that it was a great and worthwhile experience.</p>
 
 <p>If you&#8217;re unfamiliar with the format of a Coderetreat you can read all about it at <a href="http://coderetreat.com">coderetreat.com</a> but its basically a code kata where you spend most of the day pairing up in 45 min sessions and attempt to solve Conway&#8217;s Game of Life (a fascinating problem by itself). I had only first heard about it a couple weeks before when Corey Haines went on the Herding code podcast to talk about it and I&#8217;m glad I went because I feel took away a few key benefits.</p>
 
@@ -227,42 +123,15 @@
 <p>Coderetreat is language agnostic so they encourage pairing up with someone with development experience fairly different from your own which is a great way to see other programming languages in action. I probably spent most of the morning with Ruby guys and it was impressive to see how quickly we could go from a blank project to our first failing test! I also saw some of the cool things you can do with Rake as far as automatically building .net projects and I got some exposure to <a href="http://nspec.org/">NSpec</a>.</p>
 
 <p>So I highly recommend attending a Coderetreat if you get the chance but at the very least get out in your community by attending some local user groups or conferences.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/30/getting-started-with-petapoco-and-postgres/">Getting Started With PetaPoco and Postgres</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-30T11:50:00-06:00" pubdate data-updated="true">Nov 30<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;m currently working on a project I&#8217;ve inherited that uses a Postgres sql backend and I was looking for an easy way to make writing our data access layer less time consuming and painful. My first thought was to use a micro-ORM like <a href="https://github.com/robconery/massive">Massive</a> but while I&#8217;ve heard some really great things about Massive, I felt it might be a tough sell to my team members who aren&#8217;t too comfortable with Expandos and its dynamic nature (I know, but change in baby steps I suppose). Then I came across <a href="http://www.toptensoftware.com/petapoco/">PetaPoco</a> and it seemed to fit the bill. Its basically a mico-ORM like Massive with built in support for Postgres except that it also works with POCOs (Plain old CLR Objects) and was pretty easy to get up and running with.</p>
+  <entry>
+    <title type="html"><![CDATA[Getting started with PetaPoco and Postgres]]></title>
+    <link href="http://bpugh.github.com/blog/2011/11/30/getting-started-with-petapoco-and-postgres/"/>
+    <updated>2011-11-30T11:50:00-06:00</updated>
+    <id>http://bpugh.github.com/blog/2011/11/30/getting-started-with-petapoco-and-postgres</id>
+    <content type="html"><![CDATA[<p>I&#8217;m currently working on a project I&#8217;ve inherited that uses a Postgres sql backend and I was looking for an easy way to make writing our data access layer less time consuming and painful. My first thought was to use a micro-ORM like <a href="https://github.com/robconery/massive">Massive</a> but while I&#8217;ve heard some really great things about Massive, I felt it might be a tough sell to my team members who aren&#8217;t too comfortable with Expandos and its dynamic nature (I know, but change in baby steps I suppose). Then I came across <a href="http://www.toptensoftware.com/petapoco/">PetaPoco</a> and it seemed to fit the bill. Its basically a mico-ORM like Massive with built in support for Postgres except that it also works with POCOs (Plain old CLR Objects) and was pretty easy to get up and running with.</p>
 
 <p>First if you&#8217;re not already working with Postgres you&#8217;ll need to install a <a href="http://npgsql.projects.postgresql.org/">provider like Npgsql</a>. You can get the assemblies from their site or use Nuget with the command &#8220;Install-Package Npgsql&#8221;. If you were already using Postgres like I was you&#8217;ll have to add a bit more to the web.config/app.config in order to use PetaPoco.</p>
 
@@ -292,42 +161,15 @@
 <p>Next install PetaPoco which you can get from Nuget with &#8220;Install-Package PetaPoco&#8221; which installs it in your project with some handy T4 templates for generating pocos from your database schema but all you really need is the single PetaPoco.cs file somewhere in your project and you should be ready to go. <a href="http://www.toptensoftware.com/petapoco/">Check out their site</a> for some great examples to get coding.</p>
 
 <p>Its also worth noting though that if you&#8217;re targeting .Net 3.5 you&#8217;ll need to define <strong>PETAPOCO_NO_DYNAMIC </strong>as a conditional compile symbol in your project settings or it won&#8217;t compile since PetaPoco now also supports dynamics.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/19/ghostdoc-dev-tool-of-the-week/">GhostDoc [Dev Tool of the Week]</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-19T06:43:00-05:00" pubdate data-updated="true">Oct 19<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Thought I would try to make it a thing where I post about a particular tool I&#8217;m using that makes life easier for me as a developer.</p>
+  <entry>
+    <title type="html"><![CDATA[GhostDoc [Dev tool of the week]]]></title>
+    <link href="http://bpugh.github.com/blog/2011/10/19/ghostdoc-dev-tool-of-the-week/"/>
+    <updated>2011-10-19T06:43:00-05:00</updated>
+    <id>http://bpugh.github.com/blog/2011/10/19/ghostdoc-dev-tool-of-the-week</id>
+    <content type="html"><![CDATA[<p>Thought I would try to make it a thing where I post about a particular tool I&#8217;m using that makes life easier for me as a developer.</p>
 
 <p><a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a> is a cool little Visual Studio plugin that makes commenting your methods and properties much easier. With a keyboard shortcut or right clicking on a method name, GhostDoc will automatically generate xml documentation comments by intelligently looking at the method name and parameters:</p>
 
@@ -336,42 +178,15 @@
 <p>I know how we can all get lazy when it comes to documenting our code especially when we&#8217;re on a time crunch but I&#8217;ve definitely found GhostDoc helps minimize a bit of the friction when it comes to writing documentation comments and your team members will definitely thank you for it.</p>
 
 <p><a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/12/allow-pasting-multiple-lines-in-ie-textbox/">Allow Pasting Multiple Lines in IE Textbox</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-12T18:21:07-05:00" pubdate data-updated="true">Oct 12<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>You may have noticed before that if you try to paste more than one line of text into a textbox in Internet explorer it will on only paste in the first line and disregard the rest. Firefox and Chrome on the other hand will automatically paste all lines of the text onto the one line of the textbox. This issue came up in one of the projects I&#8217;m currently working on where we wanted users to be able to paste in a list of ID numbers they wanted to run a search on.</p>
+  <entry>
+    <title type="html"><![CDATA[Allow pasting multiple lines in IE textbox]]></title>
+    <link href="http://bpugh.github.com/blog/2011/10/12/allow-pasting-multiple-lines-in-ie-textbox/"/>
+    <updated>2011-10-12T18:21:07-05:00</updated>
+    <id>http://bpugh.github.com/blog/2011/10/12/allow-pasting-multiple-lines-in-ie-textbox</id>
+    <content type="html"><![CDATA[<p>You may have noticed before that if you try to paste more than one line of text into a textbox in Internet explorer it will on only paste in the first line and disregard the rest. Firefox and Chrome on the other hand will automatically paste all lines of the text onto the one line of the textbox. This issue came up in one of the projects I&#8217;m currently working on where we wanted users to be able to paste in a list of ID numbers they wanted to run a search on.</p>
 
 <p>I knew it was possible to get it working in IE since I had seen it done with the search box on Google Maps. I figured the way to do it would be to be to capture the text from the clipboard when the user is attempting to paste it into the textbox and reformat the text into a single line. In the end this is what the javascript looked liked:</p>
 
@@ -415,154 +230,16 @@
 
 
 <p>And there you go, overcoming one of Internet Explorer&#8217;s shortcomings with some simple and concise javascript.</p>
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[My development journal]]></title>
+    <link href="http://bpugh.github.com/blog/2011/10/06/my-development-journal/"/>
+    <updated>2011-10-06T01:30:40-05:00</updated>
+    <id>http://bpugh.github.com/blog/2011/10/06/my-development-journal</id>
+    <content type="html"><![CDATA[<p>After having just watched one Rob Conery&#8217;s excellent screencasts at Tekpub on going from Coder to Developer, I&#8217;ve finally decided to start my own blog. Rob suggested possibly making it something of a development journal if you&#8217;re learning a new language or technology and being relatively new to the industry and being a lead developer, it feels like I&#8217;m learning so much so fast. So this is my outlet for recording/sharing my experiences, knowledge, trials, triumphs, and mistakes with anyone who might find it interesting or useful.</p>
+]]></content>
+  </entry>
   
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/06/my-development-journal/">My Development Journal</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-06T01:30:40-05:00" pubdate data-updated="true">Oct 6<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>After having just watched one Rob Conery&#8217;s excellent screencasts at Tekpub on going from Coder to Developer, I&#8217;ve finally decided to start my own blog. Rob suggested possibly making it something of a development journal if you&#8217;re learning a new language or technology and being relatively new to the industry and being a lead developer, it feels like I&#8217;m learning so much so fast. So this is my outlet for recording/sharing my experiences, knowledge, trials, triumphs, and mistakes with anyone who might find it interesting or useful.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/01/15/how-to-use-jquery-on-instead-of-live/">How to use jQuery .on() instead of .live()</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/09/my-thoughts-on-the-global-day-of-coderetreat/">My thoughts on the Global Day of Coderetreat</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/11/30/getting-started-with-petapoco-and-postgres/">Getting started with PetaPoco and Postgres</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/19/ghostdoc-dev-tool-of-the-week/">GhostDoc [Dev tool of the week]</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/12/allow-pasting-multiple-lines-in-ie-textbox/">Allow pasting multiple lines in IE textbox</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("brandnamecoder", 3, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/brandnamecoder" class="twitter-follow-button" data-show-count="false">Follow @brandnamecoder</a>
-  
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Brandon Pugh -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
