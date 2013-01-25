@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | My Dev Blog]]></title>
   <link href="http://bpugh.github.com/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://bpugh.github.com/"/>
-  <updated>2013-01-24T21:33:46-06:00</updated>
+  <updated>2013-01-25T09:58:08-06:00</updated>
   <id>http://bpugh.github.com/</id>
   <author>
     <name><![CDATA[Brandon Pugh]]></name>
@@ -48,8 +48,8 @@ $('.submitButton').on('click', function() {</p>
 </code></pre>
 
 <p>});
-```
-and you can obviously replace 'click' with whatever event you wish to handle.</p>
+<code>``
+and you can obviously replace</code>'click'` with whatever event you wish to handle.</p>
 
 <p>Now to replace the previous live() example with .on() requires the tiniest bit more effort. The way .on() works is it will attach the event to the first selector you specify and if you specify a second selector it will look at all the events that bubble up to it and will only execute the event handler for events that came child elements matching the second selector. So we could replace the example with this:
 ``` javascript
@@ -78,7 +78,7 @@ $("#dataTable tr").live("click", function(event){</p>
 
 <p>});
 <code>
-This is a fairly common scenario where #dataTable is populated dynamically by data retrieved asynchronously from the server. Again the issue here is that all the events have to bubble up to the document before they are seen by the handler. We can instead replace this with:
+This is a fairly common scenario where `#dataTable` is populated dynamically by data retrieved asynchronously from the server. Again the issue here is that all the events have to bubble up to the document before they are seen by the handler. We can instead replace this with:
 </code> javascript
 $("#dataTable tbody").on("click", "tr", function(event){</p>
 
