@@ -1,49 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://bpugh.github.com/blog/2011/10/my-development-journal/</loc>
+        <loc>http://brandonpugh.com/blog/2011/10/my-development-journal/</loc>
         <lastmod>2013-01-24T12:20:03-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://bpugh.github.com/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox/
-        </loc>
+        <loc>http://brandonpugh.com/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox/</loc>
         <lastmod>2013-01-24T12:27:23-06:00</lastmod>
     </url>
     <url>
-        <loc>http://bpugh.github.com/blog/2011/10/ghostdoc-dev-tool-of-the-week/</loc>
+        <loc>http://brandonpugh.com/blog/2011/10/ghostdoc-dev-tool-of-the-week/</loc>
         <lastmod>2013-01-24T12:24:38-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://bpugh.github.com/blog/2011/11/getting-started-with-petapoco-and-postgres/
-        </loc>
+        <loc>http://brandonpugh.com/blog/2011/11/getting-started-with-petapoco-and-postgres/</loc>
         <lastmod>2013-01-24T12:52:30-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://bpugh.github.com/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat/
+            http://brandonpugh.com/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat/
         </loc>
         <lastmod>2013-01-24T12:33:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://bpugh.github.com/blog/2012/01/how-to-use-jquery-on-instead-of-live/</loc>
+        <loc>http://brandonpugh.com/blog/2012/01/how-to-use-jquery-on-instead-of-live/</loc>
         <lastmod>2013-01-25T09:49:35-06:00</lastmod>
     </url>
     <url>
-        <loc>http://bpugh.github.com/about-me/</loc>
+        <loc>http://brandonpugh.com/about-me/</loc>
         <lastmod>2013-02-26T00:09:44-06:00</lastmod>
     </url>
     <url>
-        <loc>http://bpugh.github.com/blog/archives/</loc>
+        <loc>http://brandonpugh.com/blog/archives/</loc>
         <lastmod>2013-01-25T09:49:35-06:00</lastmod>
     </url>
     <url>
-        <loc>http://bpugh.github.com/</loc>
+        <loc>http://brandonpugh.com/</loc>
         <lastmod>2013-01-25T09:49:35-06:00</lastmod>
     </url>
     <url>
-        <loc>http://bpugh.github.com/robots.txt</loc>
-        <lastmod>2013-01-25T10:09:19-06:00</lastmod>
+        <loc>http://brandonpugh.com/robots.txt</loc>
+        <lastmod>2013-02-26T00:37:08-06:00</lastmod>
     </url>
 </urlset>

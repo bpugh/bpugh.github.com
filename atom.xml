@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Dev Blog]]></title>
-  <link href="http://bpugh.github.com/atom.xml" rel="self"/>
-  <link href="http://bpugh.github.com/"/>
-  <updated>2013-02-26T00:28:07-06:00</updated>
-  <id>http://bpugh.github.com/</id>
+  <link href="http://brandonpugh.com/atom.xml" rel="self"/>
+  <link href="http://brandonpugh.com/"/>
+  <updated>2013-02-26T00:43:28-06:00</updated>
+  <id>http://brandonpugh.com/</id>
   <author>
     <name><![CDATA[Brandon Pugh]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to use jQuery .on() instead of .live()]]></title>
-    <link href="http://bpugh.github.com/blog/2012/01/how-to-use-jquery-on-instead-of-live/"/>
+    <link href="http://brandonpugh.com/blog/2012/01/how-to-use-jquery-on-instead-of-live/"/>
     <updated>2012-01-15T15:52:25-06:00</updated>
-    <id>http://bpugh.github.com/blog/2012/01/how-to-use-jquery-on-instead-of-live</id>
+    <id>http://brandonpugh.com/blog/2012/01/how-to-use-jquery-on-instead-of-live</id>
     <content type="html"><![CDATA[<p>One of the most used features of jQuery is the easy methods it provides to to attach event handlers to dom elements like this simple example:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -103,9 +103,9 @@
   
   <entry>
     <title type="html"><![CDATA[My thoughts on the Global Day of Coderetreat]]></title>
-    <link href="http://bpugh.github.com/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat/"/>
+    <link href="http://brandonpugh.com/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat/"/>
     <updated>2011-12-09T17:04:00-06:00</updated>
-    <id>http://bpugh.github.com/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat</id>
+    <id>http://brandonpugh.com/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat</id>
     <content type="html"><![CDATA[<p>Last weekend I attended the Global Day of Coderetreat in Dallas, TX which was not only my first Coderetreat but also my first time attending a developer community event and I have to say that it was a great and worthwhile experience.</p>
 
 <p>If you&#8217;re unfamiliar with the format of a Coderetreat you can read all about it at <a href="http://coderetreat.com">coderetreat.com</a> but its basically a code kata where you spend most of the day pairing up in 45 min sessions and attempt to solve Conway&#8217;s Game of Life (a fascinating problem by itself). I had only first heard about it a couple weeks before when Corey Haines went on the Herding code podcast to talk about it and I&#8217;m glad I went because I feel took away a few key benefits.</p>
@@ -128,9 +128,9 @@
   
   <entry>
     <title type="html"><![CDATA[Getting started with PetaPoco and Postgres]]></title>
-    <link href="http://bpugh.github.com/blog/2011/11/getting-started-with-petapoco-and-postgres/"/>
+    <link href="http://brandonpugh.com/blog/2011/11/getting-started-with-petapoco-and-postgres/"/>
     <updated>2011-11-30T11:50:00-06:00</updated>
-    <id>http://bpugh.github.com/blog/2011/11/getting-started-with-petapoco-and-postgres</id>
+    <id>http://brandonpugh.com/blog/2011/11/getting-started-with-petapoco-and-postgres</id>
     <content type="html"><![CDATA[<p>I&#8217;m currently working on a project I&#8217;ve inherited that uses a Postgres sql backend and I was looking for an easy way to make writing our data access layer less time consuming and painful. My first thought was to use a micro-ORM like <a href="https://github.com/robconery/massive">Massive</a> but while I&#8217;ve heard some really great things about Massive, I felt it might be a tough sell to my team members who aren&#8217;t too comfortable with Expandos and its dynamic nature (I know, but change in baby steps I suppose). Then I came across <a href="http://www.toptensoftware.com/petapoco/">PetaPoco</a> and it seemed to fit the bill. Its basically a mico-ORM like Massive with built in support for Postgres except that it also works with POCOs (Plain old CLR Objects) and was pretty easy to get up and running with.</p>
 
 <p>First if you&#8217;re not already working with Postgres you&#8217;ll need to install a <a href="http://npgsql.projects.postgresql.org/">provider like Npgsql</a>. You can get the assemblies from their site or use Nuget with the command &#8220;Install-Package Npgsql&#8221;. If you were already using Postgres like I was you&#8217;ll have to add a bit more to the web.config/app.config in order to use PetaPoco.</p>
@@ -166,9 +166,9 @@
   
   <entry>
     <title type="html"><![CDATA[GhostDoc [Dev tool of the week]]]></title>
-    <link href="http://bpugh.github.com/blog/2011/10/ghostdoc-dev-tool-of-the-week/"/>
+    <link href="http://brandonpugh.com/blog/2011/10/ghostdoc-dev-tool-of-the-week/"/>
     <updated>2011-10-19T06:43:00-05:00</updated>
-    <id>http://bpugh.github.com/blog/2011/10/ghostdoc-dev-tool-of-the-week</id>
+    <id>http://brandonpugh.com/blog/2011/10/ghostdoc-dev-tool-of-the-week</id>
     <content type="html"><![CDATA[<p>Thought I would try to make it a thing where I post about a particular tool I&#8217;m using that makes life easier for me as a developer.</p>
 
 <p><a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a> is a cool little Visual Studio plugin that makes commenting your methods and properties much easier. With a keyboard shortcut or right clicking on a method name, GhostDoc will automatically generate xml documentation comments by intelligently looking at the method name and parameters:</p>
@@ -183,9 +183,9 @@
   
   <entry>
     <title type="html"><![CDATA[Allow pasting multiple lines in IE textbox]]></title>
-    <link href="http://bpugh.github.com/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox/"/>
+    <link href="http://brandonpugh.com/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox/"/>
     <updated>2011-10-12T18:21:07-05:00</updated>
-    <id>http://bpugh.github.com/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox</id>
+    <id>http://brandonpugh.com/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox</id>
     <content type="html"><![CDATA[<p>You may have noticed before that if you try to paste more than one line of text into a textbox in Internet explorer it will on only paste in the first line and disregard the rest. Firefox and Chrome on the other hand will automatically paste all lines of the text onto the one line of the textbox. This issue came up in one of the projects I&#8217;m currently working on where we wanted users to be able to paste in a list of ID numbers they wanted to run a search on.</p>
 
 <p>I knew it was possible to get it working in IE since I had seen it done with the search box on Google Maps. I figured the way to do it would be to be to capture the text from the clipboard when the user is attempting to paste it into the textbox and reformat the text into a single line. In the end this is what the javascript looked liked:</p>
@@ -235,9 +235,9 @@
   
   <entry>
     <title type="html"><![CDATA[My development journal]]></title>
-    <link href="http://bpugh.github.com/blog/2011/10/my-development-journal/"/>
+    <link href="http://brandonpugh.com/blog/2011/10/my-development-journal/"/>
     <updated>2011-10-06T01:30:40-05:00</updated>
-    <id>http://bpugh.github.com/blog/2011/10/my-development-journal</id>
+    <id>http://brandonpugh.com/blog/2011/10/my-development-journal</id>
     <content type="html"><![CDATA[<p>After having just watched one Rob Conery&#8217;s excellent screencasts at Tekpub on going from Coder to Developer, I&#8217;ve finally decided to start my own blog. Rob suggested possibly making it something of a development journal if you&#8217;re learning a new language or technology and being relatively new to the industry and being a lead developer, it feels like I&#8217;m learning so much so fast. So this is my outlet for recording/sharing my experiences, knowledge, trials, triumphs, and mistakes with anyone who might find it interesting or useful.</p>
 ]]></content>
   </entry>
