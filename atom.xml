@@ -4,7 +4,7 @@
   <title><![CDATA[Brandon Pugh's Blog]]></title>
   <link href="http://brandonpugh.com/atom.xml" rel="self"/>
   <link href="http://brandonpugh.com/"/>
-  <updated>2013-06-24T21:28:35-05:00</updated>
+  <updated>2013-06-24T22:23:33-05:00</updated>
   <id>http://brandonpugh.com/</id>
   <author>
     <name><![CDATA[Brandon Pugh]]></name>
@@ -12,49 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Bittorrent Sync - File syncing for developers]]></title>
-    <link href="http://brandonpugh.com/blog/2013/06/bittorrent-sync/"/>
-    <updated>2013-06-16T18:48:00-05:00</updated>
-    <id>http://brandonpugh.com/blog/2013/06/bittorrent-sync</id>
-    <content type="html"><![CDATA[<p>Bittorrent sync is a new file sharing app released by Bittorrent Labs. People are saying its an alternative to popular file syncing services such as Dropbox, SkyDrive, etc. However I don&rsquo;t currently see it as being a true replacement for these services but after playing with for the last few days I must say I&rsquo;m impressed and I feel it does sport some cool features I&rsquo;ve long wished for in a file syncing app. I&rsquo;ve even incorporated it into my development workflow as I&rsquo;ll outline later in this post.</p>
-
-<p>What sets BS apart from similar services is that its purely a peer to peer (P2P) file syncing service. This means that files get transfer directly between your machines without going through a 3rd party&rsquo;s servers. This is handy is you&rsquo;re the more paranoid type dealing with sensitive files and have been turned off by Dropbox&rsquo;s less than stellar track record with security. Also handy for syncing your current projects when your company has a strict policy about letting source code sit on 3rd party servers.</p>
-
-<p>One of its selling points for me was its ability exclude files and folders from being synced, a feature which has been frustratingly absent from most popular services. As a bonus this feature is implemented by a .SyncIgnore file! Since the majority of mainstream source control systems implement a similar mechanism for file exclusion most developers can simply copy and paste their existing rules if you want to sync your project files which is exactly what I did. Now you may be wondering why you would need to sync your source files if you&rsquo;re already using version control however I&rsquo;ve always been a bit paranoid when it comes to my work in progress. Even though I subscribe to the idea of commit early and commit often, I&rsquo;ve frequently found myself working for the better part of the day before commiting and I just enjoy the peace of mind that the extra bit of redundancy provides. Its also handy for easily switching between working on different machines.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[the obligatory Octopress Post]]></title>
-    <link href="http://brandonpugh.com/blog/2013/01/octopress/"/>
-    <updated>2013-01-24T09:45:00-06:00</updated>
-    <id>http://brandonpugh.com/blog/2013/01/octopress</id>
-    <content type="html"><![CDATA[<h2>Why make the move?!</h2>
-
-<p>Hacker street cred.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make me a sandwich</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
-</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So I finally got Octopress up and running!!!!</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to use jQuery .on() instead of .live()]]></title>
@@ -273,15 +230,6 @@
 
 
 <p>And there you go, overcoming one of Internet Explorer&rsquo;s shortcomings with some simple and concise javascript.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[VsVim [Visual Studio extension showcase]]]></title>
-    <link href="http://brandonpugh.com/blog/2011/10/vsvim-visual-studio-extension-showcase/"/>
-    <updated>2011-10-09T18:59:33-05:00</updated>
-    <id>http://brandonpugh.com/blog/2011/10/vsvim-visual-studio-extension-showcase</id>
-    <content type="html"><![CDATA[<p>I thought I might do an occasional series of posts on useful visual studio extension that I use and start off I&rsquo;m going to talk about VsVim. Vim, for those of you who don&rsquo;t, is a powerful command line based text editor that has been around for a long time. I had to learn it when I was a freshman at college and we had to compile our C++ programs on a central Unix server over SSH.</p>
 ]]></content>
   </entry>
   
