@@ -9,9 +9,7 @@
   <meta name="author" content="Brandon Pugh">
 
   
-  <meta name="description" content="One of the most used features of jQuery is the easy methods it provides to to attach event handlers to dom elements like this simple example: 1
-2
-3 &hellip;">
+  <meta name="description" content="Bittorrent sync is a new file sharing app released by Bittorrent Labs. People are saying its an alternative to popular file syncing services such as &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,13 +18,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://brandonpugh.com/">
+  <link rel="canonical" href="http://brandonpugh.com">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="http://feeds.feedburner.com/BrandonPughsDevJournal" rel="alternate" title="Brandon Pugh's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -85,6 +84,103 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/06/bittorrent-sync/">Bittorrent Sync - File Syncing for Developers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-16T18:48:00-05:00" pubdate data-updated="true">Jun 16<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Bittorrent sync is a new file sharing app released by Bittorrent Labs. People are saying its an alternative to popular file syncing services such as Dropbox, SkyDrive, etc. However I don&rsquo;t currently see it as being a true replacement for these services but after playing with for the last few days I must say I&rsquo;m impressed and I feel it does sport some cool features I&rsquo;ve long wished for in a file syncing app. I&rsquo;ve even incorporated it into my development workflow as I&rsquo;ll outline later in this post.</p>
+
+<p>What sets BS apart from similar services is that its purely a peer to peer (P2P) file syncing service. This means that files get transfer directly between your machines without going through a 3rd party&rsquo;s servers. This is handy is you&rsquo;re the more paranoid type dealing with sensitive files and have been turned off by Dropbox&rsquo;s less than stellar track record with security. Also handy for syncing your current projects when your company has a strict policy about letting source code sit on 3rd party servers.</p>
+
+<p>One of its selling points for me was its ability exclude files and folders from being synced, a feature which has been frustratingly absent from most popular services. As a bonus this feature is implemented by a .SyncIgnore file! Since the majority of mainstream source control systems implement a similar mechanism for file exclusion most developers can simply copy and paste their existing rules if you want to sync your project files which is exactly what I did. Now you may be wondering why you would need to sync your source files if you&rsquo;re already using version control however I&rsquo;ve always been a bit paranoid when it comes to my work in progress. Even though I subscribe to the idea of commit early and commit often, I&rsquo;ve frequently found myself working for the better part of the day before commiting and I just enjoy the peace of mind that the extra bit of redundancy provides. Its also handy for easily switching between working on different machines.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/octopress/">The Obligatory Octopress Post</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-24T09:45:00-06:00" pubdate data-updated="true">Jan 24<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Why make the move?!</h2>
+
+<p>Hacker street cred.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make me a sandwich</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So I finally got Octopress up and running!!!!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/01/how-to-use-jquery-on-instead-of-live/">How to Use jQuery .on() Instead of .live()</a></h1>
     
     
@@ -119,7 +215,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>It doesn&#8217;t get much easier than that. However, a lot of times we&#8217;ll want to attach events to elements that were loaded after the initial page load such as from the result of an ajax request. This is where the .live() method comes in really handy:</p>
+<p>It doesn&rsquo;t get much easier than that. However, a lot of times we&rsquo;ll want to attach events to elements that were loaded after the initial page load such as from the result of an ajax request. This is where the .live() method comes in really handy:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -130,7 +226,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>However if you&#8217;re using jQuery 1.7 and up you now have access to the .on() method which is a very versatile method offering a number of improvements over .live(). <a href="http://bitovi.com/blog/2011/04/why-you-should-never-use-jquery-live.html">This post</a> does a good job of explaining the main issues with using live, all of which you can avoid by using .on().</p>
+<p>However if you&rsquo;re using jQuery 1.7 and up you now have access to the .on() method which is a very versatile method offering a number of improvements over .live(). <a href="http://bitovi.com/blog/2011/04/why-you-should-never-use-jquery-live.html">This post</a> does a good job of explaining the main issues with using live, all of which you can avoid by using .on().</p>
 
 <p>So how do you go about using .on()? Well .on() basically provides a consistent interface for practically all your event binding needs. You can replace the first example with:</p>
 
@@ -167,7 +263,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Let&#8217;s look at one last examle:</p>
+<p>Let&rsquo;s look at one last examle:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -225,15 +321,15 @@
 
   <div class="entry-content"><p>Last weekend I attended the Global Day of Coderetreat in Dallas, TX which was not only my first Coderetreat but also my first time attending a developer community event and I have to say that it was a great and worthwhile experience.</p>
 
-<p>If you&#8217;re unfamiliar with the format of a Coderetreat you can read all about it at <a href="http://coderetreat.com">coderetreat.com</a> but its basically a code kata where you spend most of the day pairing up in 45 min sessions and attempt to solve Conway&#8217;s Game of Life (a fascinating problem by itself). I had only first heard about it a couple weeks before when Corey Haines went on the Herding code podcast to talk about it and I&#8217;m glad I went because I feel took away a few key benefits.</p>
+<p>If you&rsquo;re unfamiliar with the format of a Coderetreat you can read all about it at <a href="http://coderetreat.com">coderetreat.com</a> but its basically a code kata where you spend most of the day pairing up in 45 min sessions and attempt to solve Conway&rsquo;s Game of Life (a fascinating problem by itself). I had only first heard about it a couple weeks before when Corey Haines went on the Herding code podcast to talk about it and I&rsquo;m glad I went because I feel took away a few key benefits.</p>
 
 <h2>Getting to know my community</h2>
 
-<p>I hadn&#8217;t realized what a strong development community there was in my city and I met some really cool people who were not only fun to talk to but who I could learn lots of new things from. I found out that there are other regular meet ups such as the <a href="http://twitter.com/#!/dallashackclub">Dallas Hack Club</a> which I plan to start attending. I even found out that there are quite a few other people besides me who still like to use Vim or Vi key mappings!</p>
+<p>I hadn&rsquo;t realized what a strong development community there was in my city and I met some really cool people who were not only fun to talk to but who I could learn lots of new things from. I found out that there are other regular meet ups such as the <a href="http://twitter.com/#!/dallashackclub">Dallas Hack Club</a> which I plan to start attending. I even found out that there are quite a few other people besides me who still like to use Vim or Vi key mappings!</p>
 
 <h2>The value of TDD</h2>
 
-<p>In school and the places I&#8217;ve worked there hasn&#8217;t been a very strong emphasis on the importance of TDD or even unit testing so I had only ever dabbled in it after reading about in various books and blog posts. After the Coderetreat however, I was sold. The Coderetreat very strongly encourages following TDD practices and pairing up with an experienced unit tester or TDD practitioner is a great way to learn. Its true that you can get addicted to the quick feedback you get from unit tests and the safety in knowing that whenever we went back and refactored one of our methods we didn&#8217;t have to worry that we broke something since the unit tests still passed. One of my partners suggested that I read Michael Feathers book <a href="http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052">Working Effectively with Legacy Code</a> and it is looking to be a great read. The bulk of what I&#8217;m currently doing at work is maintaining existing systems and now I&#8217;m working on incorporating unit tests into my updates.</p>
+<p>In school and the places I&rsquo;ve worked there hasn&rsquo;t been a very strong emphasis on the importance of TDD or even unit testing so I had only ever dabbled in it after reading about in various books and blog posts. After the Coderetreat however, I was sold. The Coderetreat very strongly encourages following TDD practices and pairing up with an experienced unit tester or TDD practitioner is a great way to learn. Its true that you can get addicted to the quick feedback you get from unit tests and the safety in knowing that whenever we went back and refactored one of our methods we didn&rsquo;t have to worry that we broke something since the unit tests still passed. One of my partners suggested that I read Michael Feathers book <a href="http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052">Working Effectively with Legacy Code</a> and it is looking to be a great read. The bulk of what I&rsquo;m currently doing at work is maintaining existing systems and now I&rsquo;m working on incorporating unit tests into my updates.</p>
 
 <h2>Exposure to new languages</h2>
 
@@ -275,9 +371,9 @@
   </header>
 
 
-  <div class="entry-content"><p>I&#8217;m currently working on a project I&#8217;ve inherited that uses a Postgres sql backend and I was looking for an easy way to make writing our data access layer less time consuming and painful. My first thought was to use a micro-ORM like <a href="https://github.com/robconery/massive">Massive</a> but while I&#8217;ve heard some really great things about Massive, I felt it might be a tough sell to my team members who aren&#8217;t too comfortable with Expandos and its dynamic nature (I know, but change in baby steps I suppose). Then I came across <a href="http://www.toptensoftware.com/petapoco/">PetaPoco</a> and it seemed to fit the bill. Its basically a mico-ORM like Massive with built in support for Postgres except that it also works with POCOs (Plain old CLR Objects) and was pretty easy to get up and running with.</p>
+  <div class="entry-content"><p>I&rsquo;m currently working on a project I&rsquo;ve inherited that uses a Postgres sql backend and I was looking for an easy way to make writing our data access layer less time consuming and painful. My first thought was to use a micro-ORM like <a href="https://github.com/robconery/massive">Massive</a> but while I&rsquo;ve heard some really great things about Massive, I felt it might be a tough sell to my team members who aren&rsquo;t too comfortable with Expandos and its dynamic nature (I know, but change in baby steps I suppose). Then I came across <a href="http://www.toptensoftware.com/petapoco/">PetaPoco</a> and it seemed to fit the bill. Its basically a mico-ORM like Massive with built in support for Postgres except that it also works with POCOs (Plain old CLR Objects) and was pretty easy to get up and running with.</p>
 
-<p>First if you&#8217;re not already working with Postgres you&#8217;ll need to install a <a href="http://npgsql.projects.postgresql.org/">provider like Npgsql</a>. You can get the assemblies from their site or use Nuget with the command &#8220;Install-Package Npgsql&#8221;. If you were already using Postgres like I was you&#8217;ll have to add a bit more to the web.config/app.config in order to use PetaPoco.</p>
+<p>First if you&rsquo;re not already working with Postgres you&rsquo;ll need to install a <a href="http://npgsql.projects.postgresql.org/">provider like Npgsql</a>. You can get the assemblies from their site or use Nuget with the command &ldquo;Install-Package Npgsql&rdquo;. If you were already using Postgres like I was you&rsquo;ll have to add a bit more to the web.config/app.config in order to use PetaPoco.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -302,9 +398,9 @@
 
 <p>Notice you have to add the DbProviderFactories to the system.data section (you can also do this in the machine.config though you may run into issues when you deploy) and be sure to specify that as the providerName in the connection string.</p>
 
-<p>Next install PetaPoco which you can get from Nuget with &#8220;Install-Package PetaPoco&#8221; which installs it in your project with some handy T4 templates for generating pocos from your database schema but all you really need is the single PetaPoco.cs file somewhere in your project and you should be ready to go. <a href="http://www.toptensoftware.com/petapoco/">Check out their site</a> for some great examples to get coding.</p>
+<p>Next install PetaPoco which you can get from Nuget with &ldquo;Install-Package PetaPoco&rdquo; which installs it in your project with some handy T4 templates for generating pocos from your database schema but all you really need is the single PetaPoco.cs file somewhere in your project and you should be ready to go. <a href="http://www.toptensoftware.com/petapoco/">Check out their site</a> for some great examples to get coding.</p>
 
-<p>Its also worth noting though that if you&#8217;re targeting .Net 3.5 you&#8217;ll need to define <strong>PETAPOCO_NO_DYNAMIC </strong>as a conditional compile symbol in your project settings or it won&#8217;t compile since PetaPoco now also supports dynamics.</p>
+<p>Its also worth noting though that if you&rsquo;re targeting .Net 3.5 you&rsquo;ll need to define <strong>PETAPOCO_NO_DYNAMIC </strong>as a conditional compile symbol in your project settings or it won&rsquo;t compile since PetaPoco now also supports dynamics.</p>
 </div>
   
   
@@ -340,13 +436,13 @@
   </header>
 
 
-  <div class="entry-content"><p>Thought I would try to make it a thing where I post about a particular tool I&#8217;m using that makes life easier for me as a developer.</p>
+  <div class="entry-content"><p>Thought I would try to make it a thing where I post about a particular tool I&rsquo;m using that makes life easier for me as a developer.</p>
 
 <p><a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a> is a cool little Visual Studio plugin that makes commenting your methods and properties much easier. With a keyboard shortcut or right clicking on a method name, GhostDoc will automatically generate xml documentation comments by intelligently looking at the method name and parameters:</p>
 
 <p><img src="http://submain.com/images/ghostdoc/GhostDoc_Sample_CSharp_660x340.png" alt="" /></p>
 
-<p>I know how we can all get lazy when it comes to documenting our code especially when we&#8217;re on a time crunch but I&#8217;ve definitely found GhostDoc helps minimize a bit of the friction when it comes to writing documentation comments and your team members will definitely thank you for it.</p>
+<p>I know how we can all get lazy when it comes to documenting our code especially when we&rsquo;re on a time crunch but I&rsquo;ve definitely found GhostDoc helps minimize a bit of the friction when it comes to writing documentation comments and your team members will definitely thank you for it.</p>
 
 <p><a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a></p>
 </div>
@@ -384,7 +480,7 @@
   </header>
 
 
-  <div class="entry-content"><p>You may have noticed before that if you try to paste more than one line of text into a textbox in Internet explorer it will on only paste in the first line and disregard the rest. Firefox and Chrome on the other hand will automatically paste all lines of the text onto the one line of the textbox. This issue came up in one of the projects I&#8217;m currently working on where we wanted users to be able to paste in a list of ID numbers they wanted to run a search on.</p>
+  <div class="entry-content"><p>You may have noticed before that if you try to paste more than one line of text into a textbox in Internet explorer it will on only paste in the first line and disregard the rest. Firefox and Chrome on the other hand will automatically paste all lines of the text onto the one line of the textbox. This issue came up in one of the projects I&rsquo;m currently working on where we wanted users to be able to paste in a list of ID numbers they wanted to run a search on.</p>
 
 <p>I knew it was possible to get it working in IE since I had seen it done with the search box on Google Maps. I figured the way to do it would be to be to capture the text from the clipboard when the user is attempting to paste it into the textbox and reformat the text into a single line. In the end this is what the javascript looked liked:</p>
 
@@ -407,7 +503,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>To begin with, I&#8217;m using <a href="http://jquery.com">jQuery</a> because it&#8217;s incredibly powerful and it&#8217;s 2011 and if you&#8217;re not using a javascript library then you are missing out. This allows me to bind an event handler for the paste event to the textbox element. Note that the paste event is supported in practically all browsers however for security reasons accessing the clipboard is only supported in IE. Fortunately for this purpose I&#8217;m only interested in Intenet Explorer and we can get the text with window.clipboardData object. Passing &#8216;Text&#8217; into the getData() function is required to return the data as text.</p>
+<p>To begin with, I&rsquo;m using <a href="http://jquery.com">jQuery</a> because it&rsquo;s incredibly powerful and it&rsquo;s 2011 and if you&rsquo;re not using a javascript library then you are missing out. This allows me to bind an event handler for the paste event to the textbox element. Note that the paste event is supported in practically all browsers however for security reasons accessing the clipboard is only supported in IE. Fortunately for this purpose I&rsquo;m only interested in Intenet Explorer and we can get the text with window.clipboardData object. Passing &lsquo;Text&rsquo; into the getData() function is required to return the data as text.</p>
 
 <p>Next calling .replace() on the text to replace all of the newline characters with spaces (or any delimeter we choose). Then we simply set the value of the textbox to the newly formatted text.</p>
 
@@ -418,16 +514,52 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Also don&#8217;t forget to call <em>return false;</em> to prevent the original text from still being pasted in.</p>
+<p>Also don&rsquo;t forget to call <em>return false;</em> to prevent the original text from still being pasted in.</p>
 
-<p>Lastly we need to handle what will happen in all other browsers. We only want to attempt to read from clipboardData in IE since it will be undefined in all other browsers. One way to accomplish this is by detecting what browser the user has however this is not recommended. The trend nowadays is to use feature detection and there are entire javascript libraries such as <a href="http://modernizr.com">Modernizr</a> dedicated to detecting which features a browser supports and then degrading gracefully when it doesn&#8217;t. In this case we can simply surround our code with an if statement to ensure our code won&#8217;t cause any errors outside of Internet Explorer.</p>
+<p>Lastly we need to handle what will happen in all other browsers. We only want to attempt to read from clipboardData in IE since it will be undefined in all other browsers. One way to accomplish this is by detecting what browser the user has however this is not recommended. The trend nowadays is to use feature detection and there are entire javascript libraries such as <a href="http://modernizr.com">Modernizr</a> dedicated to detecting which features a browser supports and then degrading gracefully when it doesn&rsquo;t. In this case we can simply surround our code with an if statement to ensure our code won&rsquo;t cause any errors outside of Internet Explorer.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">clipboardData</span><span class="p">){}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And there you go, overcoming one of Internet Explorer&#8217;s shortcomings with some simple and concise javascript.</p>
+<p>And there you go, overcoming one of Internet Explorer&rsquo;s shortcomings with some simple and concise javascript.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/10/vsvim-visual-studio-extension-showcase/">VsVim [Visual Studio Extension Showcase]</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-09T18:59:33-05:00" pubdate data-updated="true">Oct 9<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I thought I might do an occasional series of posts on useful visual studio extension that I use and start off I&rsquo;m going to talk about VsVim. Vim, for those of you who don&rsquo;t, is a powerful command line based text editor that has been around for a long time. I had to learn it when I was a freshman at college and we had to compile our C++ programs on a central Unix server over SSH.</p>
 </div>
   
   
@@ -463,7 +595,7 @@
   </header>
 
 
-  <div class="entry-content"><p>After having just watched one Rob Conery&#8217;s excellent screencasts at Tekpub on going from Coder to Developer, I&#8217;ve finally decided to start my own blog. Rob suggested possibly making it something of a development journal if you&#8217;re learning a new language or technology and being relatively new to the industry and being a lead developer, it feels like I&#8217;m learning so much so fast. So this is my outlet for recording/sharing my experiences, knowledge, trials, triumphs, and mistakes with anyone who might find it interesting or useful.</p>
+  <div class="entry-content"><p>After having just watched one Rob Conery&rsquo;s excellent screencasts at Tekpub on going from Coder to Developer, I&rsquo;ve finally decided to start my own blog. Rob suggested possibly making it something of a development journal if you&rsquo;re learning a new language or technology and being relatively new to the industry and being a lead developer, it feels like I&rsquo;m learning so much so fast. So this is my outlet for recording/sharing my experiences, knowledge, trials, triumphs, and mistakes with anyone who might find it interesting or useful.</p>
 </div>
   
   
@@ -484,43 +616,26 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/01/how-to-use-jquery-on-instead-of-live/">How to use jQuery .on() instead of .live()</a>
+        <a href="/blog/2013/06/bittorrent-sync/">Bittorrent Sync - File Syncing for Developers</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat/">My thoughts on the Global Day of Coderetreat</a>
+        <a href="/blog/2013/01/octopress/">The Obligatory Octopress Post</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/11/getting-started-with-petapoco-and-postgres/">Getting started with PetaPoco and Postgres</a>
+        <a href="/blog/2012/01/how-to-use-jquery-on-instead-of-live/">How to Use jQuery .on() Instead of .live()</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/10/ghostdoc-dev-tool-of-the-week/">GhostDoc [Dev tool of the week]</a>
+        <a href="/blog/2011/12/my-thoughts-on-the-global-day-of-coderetreat/">My Thoughts on the Global Day of Coderetreat</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox/">Allow pasting multiple lines in IE textbox</a>
+        <a href="/blog/2011/11/getting-started-with-petapoco-and-postgres/">Getting Started With PetaPoco and Postgres</a>
       </li>
     
   </ul>
-</section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("brandnamecoder", 3, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/brandnamecoder" class="twitter-follow-button" data-show-count="false">Follow @brandnamecoder</a>
-  
 </section>
 
 
@@ -559,7 +674,7 @@
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
+  js = d.createElement(s); js.id = id; js.async = true;
   js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
