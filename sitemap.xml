@@ -27,16 +27,22 @@
         <lastmod>2013-06-16T20:42:04-05:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://brandonpugh.com/blog/2012/06/checking-if-a-dom-element-exists-with-jquery/
+        </loc>
+        <lastmod>2013-06-25T23:59:40-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://brandonpugh.com/about-me/</loc>
         <lastmod>2013-06-16T20:42:04-05:00</lastmod>
     </url>
     <url>
         <loc>http://brandonpugh.com/blog/archives/</loc>
-        <lastmod>2013-06-16T20:42:04-05:00</lastmod>
+        <lastmod>2013-06-25T23:59:40-05:00</lastmod>
     </url>
     <url>
         <loc>http://brandonpugh.com/</loc>
-        <lastmod>2013-06-16T20:42:04-05:00</lastmod>
+        <lastmod>2013-06-25T23:59:40-05:00</lastmod>
     </url>
     <url>
         <loc>http://brandonpugh.com/robots.txt</loc>

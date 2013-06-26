@@ -9,9 +9,7 @@
   <meta name="author" content="Brandon Pugh">
 
   
-  <meta name="description" content="One of the most used features of jQuery is the easy methods it provides to to attach event handlers to dom elements like this simple example: 1
-2
-3 &hellip;">
+  <meta name="description" content="This is a simple tip but one I feel makes my code a bit easier to read. I was never very pleased with the standard way of checking if a dom element &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +78,80 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/checking-if-a-dom-element-exists-with-jquery/">Checking if a Dom Element Exists With JQuery [Byte Sized Tips]</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-25T21:52:00-05:00" pubdate data-updated="true">Jun 25<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/06/checking-if-a-dom-element-exists-with-jquery/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is a simple tip but one I feel makes my code a bit easier to read.</p>
+
+<p>I was never very pleased with the standard way of checking if a dom element exits in jquery:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#userName&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>    <span class="c1">//do something with $(&#39;#firstName&#39;)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The solution I like is to create a very simple jQuery plugin to encapsulate this logic:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// this extension reads better when selecting elements</span>
+</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">exists</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">this</span> <span class="p">.</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can place this anywhere you like such as in a &lsquo;utils.js&rsquo; file, so long as it loads after jQuery. Now your code
+would like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#userName&#39;</span><span class="p">).</span><span class="nx">exists</span><span class="p">()){</span>
+</span><span class='line'>    <span class="c1">//do something with $(&#39;#firstName&#39;)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -497,6 +569,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/06/checking-if-a-dom-element-exists-with-jquery/">Checking if a Dom Element Exists With JQuery [Byte Sized Tips]</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/01/how-to-use-jquery-on-instead-of-live/">How to Use jQuery .on() Instead of .live()</a>
       </li>
     
@@ -510,10 +586,6 @@
     
       <li class="post">
         <a href="/blog/2011/10/ghostdoc-dev-tool-of-the-week/">GhostDoc [Dev Tool of the Week]</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/allow-pasting-multiple-lines-in-ie-textbox/">Allow Pasting Multiple Lines in IE Textbox</a>
       </li>
     
   </ul>

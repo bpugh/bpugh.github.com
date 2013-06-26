@@ -4,7 +4,7 @@
   <title><![CDATA[Brandon Pugh's Blog]]></title>
   <link href="http://brandonpugh.com/atom.xml" rel="self"/>
   <link href="http://brandonpugh.com/"/>
-  <updated>2013-06-24T22:23:33-05:00</updated>
+  <updated>2013-06-26T00:03:40-05:00</updated>
   <id>http://brandonpugh.com/</id>
   <author>
     <name><![CDATA[Brandon Pugh]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Checking if a dom element exists with JQuery [Byte sized tips]]]></title>
+    <link href="http://brandonpugh.com/blog/2012/06/checking-if-a-dom-element-exists-with-jquery/"/>
+    <updated>2012-06-25T21:52:00-05:00</updated>
+    <id>http://brandonpugh.com/blog/2012/06/checking-if-a-dom-element-exists-with-jquery</id>
+    <content type="html"><![CDATA[<p>This is a simple tip but one I feel makes my code a bit easier to read.</p>
+
+<p>I was never very pleased with the standard way of checking if a dom element exits in jquery:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#userName&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>    <span class="c1">//do something with $(&#39;#firstName&#39;)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The solution I like is to create a very simple jQuery plugin to encapsulate this logic:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// this extension reads better when selecting elements</span>
+</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">exists</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">this</span> <span class="p">.</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can place this anywhere you like such as in a &lsquo;utils.js&rsquo; file, so long as it loads after jQuery. Now your code
+would like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#userName&#39;</span><span class="p">).</span><span class="nx">exists</span><span class="p">()){</span>
+</span><span class='line'>    <span class="c1">//do something with $(&#39;#firstName&#39;)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to use jQuery .on() instead of .live()]]></title>
