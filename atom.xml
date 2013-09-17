@@ -4,7 +4,7 @@
   <title><![CDATA[Brandon Pugh's Blog]]></title>
   <link href="http://brandonpugh.com/atom.xml" rel="self"/>
   <link href="http://brandonpugh.com/"/>
-  <updated>2013-06-26T00:03:40-05:00</updated>
+  <updated>2013-09-17T00:44:13-05:00</updated>
   <id>http://brandonpugh.com/</id>
   <author>
     <name><![CDATA[Brandon Pugh]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Avoid Committing Dumb Mistakes with Git hooks]]></title>
+    <link href="http://brandonpugh.com/blog/2013/08/avoid-committing-dumb-mistakes-with-git-hooks/"/>
+    <updated>2013-08-14T00:12:00-05:00</updated>
+    <id>http://brandonpugh.com/blog/2013/08/avoid-committing-dumb-mistakes-with-git-hooks</id>
+    <content type="html"><![CDATA[<p><strong>TLDR</strong>: Git hooks are an awesome way to automatically verify your code as you commit your changes</p>
+
+<p>I&rsquo;m sure we&rsquo;ve all been there where we accidentally committed a change that we were supposed to undo or wasn&rsquo;t ready to be pushed and don&rsquo;t realize it until the build breaks or QA finds a bug.</p>
+
+<p>The first step I take to avoid is instead of just running <code>git add -A</code> I make sure to review all the changes in the files I&rsquo;m potentially committing. This is where a graphical tool like Gitk or SmartGit comes in handy as they allow you to click on your modified files and easily view a diff and then select with ones to stage.
+Unfortunately changes still slip through as happened to me yesterday when a change of mine got pushed all the way to Test before it was noticed. This led me to create an additional safety net.</p>
+
+<h3>Enter Git hooks</h3>
+
+<p>Client side Git hooks are simply scripts that reside in you local repo in the <code>.git/hooks</code> directory. These scripts get run at specific times during your local workflow depending on the name of the hook. So for me I wrote a pre-commit hook that checks all the files that are about to be committed and looks for the string <code>'todo: remove'</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># Redirect output to stderr.</span>
+</span><span class='line'><span class="nb">exec </span>1&gt;&amp;2
+</span><span class='line'><span class="nv">FORBIDDEN</span><span class="o">=</span><span class="s1">&#39;todo: remove&#39;</span>
+</span><span class='line'>git diff --cached --name-only | <span class="se">\</span>
+</span><span class='line'>    xargs grep --with-filename -i -n <span class="s2">&quot;$FORBIDDEN&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;COMMIT REJECTED Found &#39;$FORBIDDEN&#39; references. Please remove them before commiting&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+</span><span class='line'><span class="nb">exit</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So now if I make any change that I want to undo before committing, say like commenting out a conditional to make testing easier, I just add a comment like <code>//todo: remove</code> and git won&rsquo;t let me commit the changes.</p>
+
+<p>You could also have it look for common debug statements like <code>console.log</code> in javascript files or even have it run a code analysis tool against the files staged for commit.</p>
+
+<p>Has anyone used git hooks before? Have any useful ones to share?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Checking if a dom element exists with JQuery [Byte sized tips]]]></title>

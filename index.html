@@ -9,7 +9,7 @@
   <meta name="author" content="Brandon Pugh">
 
   
-  <meta name="description" content="This is a simple tip but one I feel makes my code a bit easier to read. I was never very pleased with the standard way of checking if a dom element &hellip;">
+  <meta name="description" content="TLDR: Git hooks are an awesome way to automatically verify your code as you commit your changes I&rsquo;m sure we&rsquo;ve all been there where we &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,74 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/avoid-committing-dumb-mistakes-with-git-hooks/">Avoid Committing Dumb Mistakes With Git Hooks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-14T00:12:00-05:00" pubdate data-updated="true">Aug 14<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/avoid-committing-dumb-mistakes-with-git-hooks/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>TLDR</strong>: Git hooks are an awesome way to automatically verify your code as you commit your changes</p>
+
+<p>I&rsquo;m sure we&rsquo;ve all been there where we accidentally committed a change that we were supposed to undo or wasn&rsquo;t ready to be pushed and don&rsquo;t realize it until the build breaks or QA finds a bug.</p>
+
+<p>The first step I take to avoid is instead of just running <code>git add -A</code> I make sure to review all the changes in the files I&rsquo;m potentially committing. This is where a graphical tool like Gitk or SmartGit comes in handy as they allow you to click on your modified files and easily view a diff and then select with ones to stage.
+Unfortunately changes still slip through as happened to me yesterday when a change of mine got pushed all the way to Test before it was noticed. This led me to create an additional safety net.</p>
+
+<h3>Enter Git hooks</h3>
+
+<p>Client side Git hooks are simply scripts that reside in you local repo in the <code>.git/hooks</code> directory. These scripts get run at specific times during your local workflow depending on the name of the hook. So for me I wrote a pre-commit hook that checks all the files that are about to be committed and looks for the string <code>'todo: remove'</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># Redirect output to stderr.</span>
+</span><span class='line'><span class="nb">exec </span>1&gt;&amp;2
+</span><span class='line'><span class="nv">FORBIDDEN</span><span class="o">=</span><span class="s1">&#39;todo: remove&#39;</span>
+</span><span class='line'>git diff --cached --name-only | <span class="se">\</span>
+</span><span class='line'>    xargs grep --with-filename -i -n <span class="s2">&quot;$FORBIDDEN&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;COMMIT REJECTED Found &#39;$FORBIDDEN&#39; references. Please remove them before commiting&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+</span><span class='line'><span class="nb">exit</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So now if I make any change that I want to undo before committing, say like commenting out a conditional to make testing easier, I just add a comment like <code>//todo: remove</code> and git won&rsquo;t let me commit the changes.</p>
+
+<p>You could also have it look for common debug statements like <code>console.log</code> in javascript files or even have it run a code analysis tool against the files staged for commit.</p>
+
+<p>Has anyone used git hooks before? Have any useful ones to share?</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -569,6 +637,10 @@ would like so:</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/08/avoid-committing-dumb-mistakes-with-git-hooks/">Avoid Committing Dumb Mistakes With Git Hooks</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/06/checking-if-a-dom-element-exists-with-jquery/">Checking if a Dom Element Exists With JQuery [Byte Sized Tips]</a>
       </li>
     
@@ -582,10 +654,6 @@ would like so:</p>
     
       <li class="post">
         <a href="/blog/2011/11/getting-started-with-petapoco-and-postgres/">Getting Started With PetaPoco and Postgres</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/ghostdoc-dev-tool-of-the-week/">GhostDoc [Dev Tool of the Week]</a>
       </li>
     
   </ul>
