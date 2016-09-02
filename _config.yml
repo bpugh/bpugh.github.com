@@ -2,11 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://brandonpugh.com
+url: https://www.brandonpugh.com
 title: Brandon Pugh's Blog
 subtitle: Condensing fact from the vapor of nuance.
 author: Brandon Pugh
-simple_search: http://google.com/search
+simple_search: https://google.com/search
 description: Brandon Pugh's experiences on professional software development and technology
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -17,7 +17,7 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: http://feeds.feedburner.com/BrandonPughsDevJournal
-subscribe_email: 
+subscribe_email:
 category_feeds: false
 # RSS feeds can list your email address if you like
 email:
