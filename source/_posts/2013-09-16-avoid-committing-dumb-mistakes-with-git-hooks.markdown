@@ -3,13 +3,13 @@ layout: post
 title: "Avoid Committing Dumb Mistakes with Git hooks"
 date: 2013-08-14 00:12
 comments: true
-categories: 
+categories:
 ---
 **TLDR**: Git hooks are an awesome way to automatically verify your code as you commit your changes
 
 I'm sure we've all been there where we accidentally committed a change that we were supposed to undo or wasn't ready to be pushed and don't realize it until the build breaks or QA finds a bug.
 
-The first step I take to avoid is instead of just running `git add -A` I make sure to review all the changes in the files I'm potentially committing. This is where a graphical tool like Gitk or SmartGit comes in handy as they allow you to click on your modified files and easily view a diff and then select with ones to stage.
+The first step I take to avoid committing anything unintentionally is instead of just running `git add -A` I make sure to review all the changes in the files I'm potentially committing. This is where a graphical tool like Gitk or SmartGit comes in handy as they allow you to click on your modified files and easily view a diff and then select witch changes to stage.
 Unfortunately changes still slip through as happened to me yesterday when a change of mine got pushed all the way to Test before it was noticed. This led me to create an additional safety net.
 
 ### Enter Git hooks
