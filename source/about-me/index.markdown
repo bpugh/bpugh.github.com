@@ -4,6 +4,7 @@ date: 2012-01-10 17:23:56
 layout: page
 slug: about-me
 title: About Me
+description: About Brandon Pugh
 ---
 
 > To only a fraction of the human race does God give the privilege of earning one's bread doing what one would have gladly pursued free, for passion. I am very thankful. - Frederick Brooks, [The Mythical Man-Month](http://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959)
