@@ -12,7 +12,7 @@ To specify your credentials, you have to place them in the proxy url so your npm
 
 `npm install --proxy http://user_name:password@proxy.company.com:8080`
 
-Typing that every time will get old fast. Again you can use `npm config set` but the security conscience will probably feel a bit uneasy having your credentials sitting in plain text in a file on disk especially if, like most corporate environments, the proxy uses your active directory credentials.
+Typing that every time will get old fast. Again you can use `npm config set` but the security conscious will probably feel a bit uneasy having your credentials sitting in plain text in a file on disk especially if, like most corporate environments, the proxy uses your active directory credentials.
 
 To ease the pain I created a powershell wrapper function around npm to prompt for your proxy password:
 
