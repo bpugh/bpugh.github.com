@@ -27,4 +27,4 @@ So now if I make any change that I want to undo before committing, say like comm
 
 You could also have it look for common debug statements like `console.log` in javascript files or even have it run a code analysis tool against the files staged for commit.
 
-Has anyone used git hooks before? Have any useful ones to share?
+You can download the above hook from this gist: [https://gist.github.com/bpugh/6a9617ac277c93bc86fe5f1507f5ec90](https://gist.github.com/bpugh/6a9617ac277c93bc86fe5f1507f5ec90) 
